@@ -269,6 +269,7 @@ struct CalculationView: View {
                 }
 
             }
+            Spacer()
         }
         .padding(.top, 10)
         .navigationTitle("Share the Bill")
@@ -277,7 +278,7 @@ struct CalculationView: View {
 
 struct CalculationView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView {
+        WindowGroup{
             CalculationView()
         }
     }

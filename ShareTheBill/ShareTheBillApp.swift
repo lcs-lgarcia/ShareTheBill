@@ -10,10 +10,12 @@ import SwiftUI
 @main
 struct ShareTheBillApp: App {
     var body: some Scene {
-        WindowGroup {
-            NavigationView {
-                CalculationView()
-            }
+        NavigationView{
+            TabView {
+            CalculationView(history: $history)
+                
+                SwiftUIView(history: $history)
         }
+    }
     }
 }
